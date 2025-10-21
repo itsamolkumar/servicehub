@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global tweaks */
+:root {
+	--bg: #f8fafc;
+	--muted: #6b7280;
+}
+
+html, body, #root {
+	height: 100%;
+}
+
+
+body {
+	background-color: var(--bg);
+	color: #111827;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+html.dark body {
+	background-color: #18181b;
+	color: #f3f4f6;
+}
+
+/* small utility to ensure images behave */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+/* simple container utility used across components */
+.container {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
